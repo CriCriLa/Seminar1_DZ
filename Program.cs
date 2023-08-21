@@ -61,15 +61,30 @@
 // }
 // Задача 6: Напишите программу, которая на вход принимает 
 // число и выдает, является ли число четным.
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num % 2 == 1)
+// {
+//     Console.WriteLine("нет");
+// }
+// else
+// {
+//     Console.WriteLine("Да");
+// }
+// Задача 8. НАпишите программу, которая на вход принимает число N,
+//  а на выходе показывает все четные число от 1 до N
 Console.Clear();
 Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+int Num = Convert.ToInt32(Console.ReadLine());
+int countNum = 1;
 
-if (num % 2 == 1)
+while (countNum <= Num)
 {
-    Console.WriteLine("нет");
-}
-else
-{
-    Console.WriteLine("Да");
+    if (countNum % 2 == 0)
+    {
+        Console.Write(countNum + ", ");
+    }
+    countNum = countNum+1;
 }
