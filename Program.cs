@@ -23,39 +23,53 @@
 // Задача 4. Напишите программу, которая принимает на вход три числа 
 // и выдает максимальное из этих чисел. 
 
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите число: ");
+// int num3 = Convert.ToInt32(Console.ReadLine());
+
+// if (num1>num2)
+// {
+//     if (num1>num3)
+//     {
+//         Console.WriteLine("Максимальное число: " + num1);
+//     }
+//     else
+//     {
+//         if (num2>num3)
+//         {
+//             Console.WriteLine("Максимальное число: " + num2);
+//         }
+//         else
+//         {
+//             Console.WriteLine("Максимальное число: " + num3);
+//         }
+//     }
+// }
+// else if (num2>num3)
+// {
+//     Console.WriteLine("Максимальное число: " + num2);
+// }
+// else 
+// {
+//     Console.WriteLine("Максимальное число: " + num3);
+// }
+// Задача 6: Напишите программу, которая на вход принимает 
+// число и выдает, является ли число четным.
 Console.Clear();
 Console.Write("Введите число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Введите число: ");
-int num3 = Convert.ToInt32(Console.ReadLine());
-
-if (num1>num2)
+if (num % 2 == 1)
 {
-    if (num1>num3)
-    {
-        Console.WriteLine("Максимальное число: " + num1);
-    }
-    else
-    {
-        if (num2>num3)
-        {
-            Console.WriteLine("Максимальное число: " + num2);
-        }
-        else
-        {
-            Console.WriteLine("Максимальное число: " + num3);
-        }
-    }
+    Console.WriteLine("нет");
 }
-else if (num2>num3)
+else
 {
-    Console.WriteLine("Максимальное число: " + num2);
-}
-else 
-{
-    Console.WriteLine("Максимальное число: " + num3);
+    Console.WriteLine("Да");
 }
